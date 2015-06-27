@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+
+
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TechnoHome"
+                    android:textSize="40dp"
+                    android:textColor="@color/primary_dark"
+                    android:gravity="center"/>
+                <TextView
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/primary_text"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="Technovators present you with TechnoHome which would be new your tool to automate your home. Here you have options to control your appliances via internet and bluetooth. This app is very user friendly, specially designed for the people who like personlised objects. Voice commands can be given to control switches from bluetooth menu."/>
+
+
+
+
+            </LinearLayout>
+
+
+        <fragment
+
+            android:id="@+id/fragment_drawer_layout"
+            android:name="com.example.nischal.materialdesign1.drawer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_drawer_layout"
+            tools:layout="@layout/fragment_drawer_layout" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

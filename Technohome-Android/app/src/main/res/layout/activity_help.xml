@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nischal.materialdesign1.help_activity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:showDividers="middle|end"
+            android:dividerPadding="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to use"
+                    android:textSize="30dp"
+                    android:textColor="@color/primary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/secondary_text"
+                    android:text="User can control appliances via app or regular switches. In app User have two options: Bluetooth and Internet; each of which can be accessed from navigation drawer.
+However User must ensure that he is within the range of bluetooth device on switchboards else app may crash. Also voice recognition additionally requires internet connection. However internet option will always provide correct status irrespective of your location."/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth "
+                    android:textSize="30dp"
+                    android:textColor="@color/primary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/secondary_text"
+                    android:text="User have two options in this section. He can either control via voice commands or by directly pressing the button. Voice commands can be changed from the settings menu. User can also change Button name as per his wish from settings menu. Also user has options to change MAC address of his bluetooth module, but it must be kept in mind that MAC address is unique for every bluetooth module,any wrong input may lead app to crash. When connecting to new Bluetooth module the password is 1234"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internet"
+                    android:textSize="30dp"
+                    android:textColor="@color/primary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/secondary_text"
+                    android:text="Simple buttons are shown which can be used to control the appliances. Also state of appliances is shown below the buttons. In the settings menu there is an option to change URL of server created by our device(arduino). This Internet page automatically refreshes itself in 20 seconds or user can swipe down to refresh manually."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Technohome</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="actionbar_top_right">next</string>
+    <string name="title_activity_subactivity">Bluetooth</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_bluetooth">bluetooth</string>
+    <string name="title_activity_settings_1">Settings_1</string>
+    <string name="title_activity_about_us">about_us</string>
+    <string name="title_activity_help">help</string>
+</resources>

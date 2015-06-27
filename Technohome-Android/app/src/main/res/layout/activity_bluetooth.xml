@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nischal.materialdesign1.bluetooth"
+    android:id="@+id/bluetooth">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar" />
+
+
+
+
+    <TextView
+        android:id="@+id/sensorView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED 1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/button1"
+        />
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/switch1"
+        android:layout_alignTop="@+id/sensorView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="79dp"
+        android:layout_marginEnd="79dp"
+        android:checked="false" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_bar"></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LED 2"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/sensorView3"
+        android:layout_alignStart="@+id/sensorView3" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/switch2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LED 3"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="54dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/switch3"
+        android:checked="false"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2" />
+
+
+
+
+</RelativeLayout>

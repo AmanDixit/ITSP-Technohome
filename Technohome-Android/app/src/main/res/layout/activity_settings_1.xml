@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nischal.materialdesign1.bluetooth">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Settings"
+        android:id="@+id/button2"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Button1"
+        android:id="@+id/led_1"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_name1"
+        android:layout_alignBottom="@+id/led_1"
+        android:layout_toRightOf="@+id/led_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Button2"
+        android:id="@+id/led_2"
+        android:layout_below="@+id/led_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_name2"
+        android:layout_alignBottom="@+id/led_2"
+        android:layout_toRightOf="@+id/led_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Button3"
+        android:id="@+id/led_3"
+        android:layout_below="@+id/led_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_name3"
+        android:layout_alignBottom="@+id/led_3"
+        android:layout_toRightOf="@+id/led_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:id="@+id/button3"
+        android:layout_below="@+id/led_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/new_name3"
+        android:layout_alignEnd="@+id/new_name3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MAC Address"
+        android:id="@+id/mac1"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mac"
+        android:layout_alignBottom="@+id/mac1"
+        android:layout_toRightOf="@+id/mac1"
+        android:layout_alignRight="@+id/new_name3"
+        android:layout_alignEnd="@+id/new_name3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice Commands"
+        android:id="@+id/button4"
+        android:layout_below="@+id/mac"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/mac"
+        android:layout_alignEnd="@+id/mac" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="command for button1"
+        android:id="@+id/voice_on1"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_on_1"
+        android:layout_alignBottom="@+id/voice_on1"
+        android:layout_toRightOf="@+id/voice_on1"
+        android:layout_toEndOf="@+id/voice_on1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="command for button2"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/voice_on_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_off_1"
+        android:layout_alignBottom="@+id/voice_on_1"
+        android:layout_toRightOf="@+id/voice_on_1"
+        android:layout_toEndOf="@+id/voice_on_1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_on_2"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/voice_off_1"
+        android:layout_toStartOf="@+id/voice_off_1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_off_2"
+        android:layout_alignTop="@+id/voice_on_2"
+        android:layout_alignLeft="@+id/voice_off_1"
+        android:layout_alignStart="@+id/voice_off_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="command for button3"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_on_3"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/voice_off_3"
+        android:layout_below="@+id/voice_on_2"
+        android:layout_toRightOf="@+id/voice_on_2"
+        android:layout_toEndOf="@+id/voice_on_2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/mac"
+        android:layout_alignEnd="@+id/mac" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="URL"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/url"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/url"
+        android:layout_toEndOf="@+id/url" />
+
+
+</RelativeLayout>
+
